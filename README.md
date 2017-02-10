@@ -27,7 +27,7 @@ ERB and other templating engines allow us to modify the content and structure of
 
 The substitution tag evaluates ruby code and then displays the results into the view. It opens with `<%=` and closes with `%>`. Inside of these tags, you can write any valid Ruby code that you want. 
 
-In our `index.erb` file, add the following code: 
+In our `index.erb` file, add the following code inside the `<body>`: 
 
 ```erb
 <%= "I love " + "Ruby!!" %>
@@ -76,12 +76,14 @@ As you can see, only the second `p` tag was sent to the browser. This example is
     <a href="/login">Click here to Log In</a>
   <% end %>
 ```
+You probably can't test this out right now, but use your imagination!
 
 ### Iteration
 
-We can also use iteration to manage lists of items. For instance, given an array `squares = [1,2,4,8]`:
+We can also use iteration to manage lists of items. For instance, given an array of squares, we can use ruby to iterate over it, and use HTML to make each element appear:
 
 ```erb
+<% squares = [1,2,4,8] %>
 <ul>
 <% squares.each do |square| %>
   <li><%= square %></li>
@@ -126,12 +128,11 @@ This should display:
 </ul>
 ```
 
+Great!  Now you know how to embed ruby using both substitution and scripting.
+
 ## Video Review
 
 * [Video Review- Forms](https://www.youtube.com/watch?v=0TyCN_oJU3Y) 
 
 ## Resources
 [An Introduction to ERB Templating - Stuart Ellis](http://www.stuartellis.eu/articles/erb/)
-
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/sinatra-using-erb'>Using ERB</a> on Learn.co and start learning to code for free.</p>

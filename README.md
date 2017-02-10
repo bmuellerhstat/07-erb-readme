@@ -130,9 +130,5 @@ This should display:
 
 Great!  Now you know how to embed ruby using both substitution and scripting.
 
-## Video Review
-
-* [Video Review- Forms](https://www.youtube.com/watch?v=0TyCN_oJU3Y) 
-
 ## Resources
 [An Introduction to ERB Templating - Stuart Ellis](http://www.stuartellis.eu/articles/erb/)
